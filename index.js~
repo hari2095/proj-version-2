@@ -13,7 +13,7 @@ var httpServer = http.Server(app);
 app.get('/', function(req, res){
     var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
     //console.log(fullUrl);
-    res.sendFile(__dirname + '/androidcontrol.html');
+    res.sendFile(__dirname + '/index.html');
 });
 app.listen(8080);
 
